@@ -1,1 +1,1 @@
-# barber-project-webpack
+# mentoring-simple-webpack-starter
