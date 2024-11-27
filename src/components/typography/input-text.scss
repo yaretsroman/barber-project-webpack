@@ -1,0 +1,10 @@
+@import '../../scss/colors.scss';
+
+.input-text {
+    font-family: 'FiraSans';
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+    text-transform: capitalize;
+    color: map-get($whiteColors, 'white1');
+}

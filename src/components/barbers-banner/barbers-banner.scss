@@ -1,0 +1,35 @@
+@import '../../scss/colors.scss';
+
+.barbers-banner {
+   min-height: 546px;
+   background-color: map-get($brownColors, 'brown2');
+   &__item {
+    display: flex;
+    justify-content: space-evenly;
+   }
+
+   &__next-btn,
+   &__prev-btn {
+    &::after {
+        display: none;
+    }
+   }
+   &__next-btn {
+    background-image: url('../../assets/images/btn-swiper/next-btn.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+   }
+   &__prev-btn {
+    background-image: url('../../assets/images/btn-swiper/prev-btn.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+   }
+}
+
+.barber-item {
+    &__link {
+        &:hover {
+            color: map-get($whiteColors, 'white1');
+        }
+    }
+}

@@ -1,19 +1,18 @@
-$default-color: #ffffff;
-$primary-color: #444ce0;
-$success-color: #26de81;
-$danger-color: #fc5c65;
-$warning-color: #fed330;
-$light-color: #999999;
-$purple-color: #8854d0;
+$orangeColors: (
+    orange1: #FF6E40
+);
 
-// Neutral Color
-$neutral-primary: #303133;
-$neutral-regular: #606266;
-$neutral-secondary: #909399;
-$neutral-placeholder: #c0c4cc;
+$brownColors: (
+    brown1:rgba(37, 29, 26, 1),
+    brown2:rgba(59, 50, 45, 1),
+);
 
-// Border Color
-$border-base: #dcdfe6;
-$border-light: #e4e7ed;
-$border-lighter: #ebeef5;
-$border-lightex: #f2f6fc;
+$whiteColors: (
+    white1: rgba(255, 255, 255, 1),
+    white2: rgba(239, 231, 226, 1),
+    white3: rgba(183, 170, 162, 1),
+);
+
+$blackColors: (
+    black1: rgba(0, 0, 0, 1),
+);

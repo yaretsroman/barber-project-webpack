@@ -1,0 +1,53 @@
+@import '../../scss/colors.scss';
+
+.a1 {
+  text-decoration: none;
+  font-family: 'FiraSans';
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: map-get($whiteColors, 'white2');
+}
+
+.a2 {
+  text-decoration: none;
+  font-family: 'FiraSans';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: map-get($whiteColors, 'white2');
+}
+
+.a3 {
+  text-decoration: none;
+  font-family: 'FiraSans';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: map-get($whiteColors, 'white1');
+}
+
+.a4 {
+  text-decoration: none;
+  font-family: 'FiraSans';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: map-get($orangeColors, 'orange1');
+}
+
+.a5 {
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: map-get($whiteColors, 'white3');
+}
+  
+  

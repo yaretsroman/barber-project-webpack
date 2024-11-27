@@ -1,8 +1,5 @@
-// Font
-$mainFont: "Roboto", Helvetica, Arial, sans-serif;
-
-// Size
-$mainFontColor: #101010;
+$mainFontFamily: 'FiraSans';
+$mainFontWigth: 400;
 $mainFontSize: 18px;
-$mainFontWeight: 400;
-$mainLineHeight: 1.4;
+$mainFontLineHeight: 27px;
+$mainColor: map-get($whiteColors, 'white');

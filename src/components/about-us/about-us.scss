@@ -1,0 +1,61 @@
+@import '../../scss/colors.scss';
+@import '../../scss/breakpoints.scss';
+
+.about-us {
+    background-color: map-get($brownColors, 'brown2');
+    min-height: 870px;
+}
+
+.images-about-us {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    grid-template-rows: 337px;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'first first second third'
+    'fourth fifth sixth sixth';
+    &__first {
+        grid-area: first;
+    }
+    &__second {
+        grid-area: second;
+    }
+    &__third {
+        grid-area: third;
+    }
+    &__fourth {
+        grid-area: fourth;
+    }
+    &__fifth {
+        grid-area: fifth;
+    }
+    &__sixth {
+        grid-area: sixth;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, 'lg')) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas:
+      'first first'
+      'sixth sixth'
+      'second third'
+      'fourth fifth';
+    }
+}
+
+.about-us-description {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.h4-subtitle {
+  width: 580px;
+}
+
+.about-us-button {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

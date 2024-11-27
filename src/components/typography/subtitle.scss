@@ -1,0 +1,29 @@
+@import '../../scss/colors.scss';
+
+.subtitle1 {
+    font-family: 'FiraSans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: map-get($whiteColors, 'white1');
+}
+
+.subtitle2 {
+  font-family: 'FiraSans';
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: map-get($whiteColors, 'white2');
+}
+
+.subtitle3 {
+  font-family: 'FiraSans';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: map-get($whiteColors, 'white3');
+
+}

@@ -1,5 +1,5 @@
 {
-  "name": "mentoring-webpack-starter",
+  "name": "Cool Barber",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -35,8 +35,11 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.1",
     "bootstrap": "^5.3.0",
+    "bootstrap-grid": "^3.0.1",
     "dotenv-webpack": "^8.0.1",
-    "reset.css": "^2.0.2"
+    "reset.css": "^2.0.2",
+    "swiper": "^9.4.1"
   }
 }

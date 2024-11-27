@@ -1,21 +1,538 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barber Shop</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="top-navigation mb-30">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cool Barber</title>
-</head>
+          <button class="top-navigation__mobile-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
 
-<body>
-  <div id="root">
-    <div style="margin: 100px 0; text-align: center;">
-      <h1>Hello IT-academy student 🚀</h1>
-      <p style="margin: 10px 0">Welcome to the JS course 🔥 🔥 🔥 </p>
-      <img src="./assets/images/js-logo.png" width="200" height="200" />
-    </div>
-  </div>
-</body>
+          <div>
+            <div class="logo-top col-lg-2 col-xs-2">
+              <img class="logo" src="./src/assets/images/Logo.svg" alt="logo">
+            </div>
+          </div>
 
+          <div class="d-none d-lg-block col-lg-6">
+            <nav class="navigation pt-10">
+                <a href="#" class="navigation__link a1">About Us</a>
+                <a href="#" class="navigation__link a1">Our masters</a>
+                <a href="#" class="navigation__link a1">Portfolio</a>
+                <a href="#" class="navigation__link a1">Testimonials</a>
+                <a href="#" class="navigation__link a1">Contacts</a>
+            </nav>
+          </div>
+  
+          <div class="d-none d-lg-block">
+             <div class="address-links">
+                <div class="address">
+                  <a href="#" class="address__link a2">
+                    302 W 50th St,<br> NY, NY 10019<br>         
+                  </a>   
+                  <a href="#">
+                    <img class="pl-10" 
+                    src="./src/assets/images/icon/map.svg" alt="map">
+                  </a>
+                </div>
+
+                <div class="telephone">
+                  <div>
+                   <a href="#" class="telephone__link a3">
+                     8 (800) 000-00-00
+                   </a>
+                   <a href="#" class="telephone__link a2">
+                     Daily from 9 to 20<br>
+                   </a>
+                  </div>
+                 <a href="#">
+                  <img class=""
+                  src="./src/assets/images/icon/phone.svg" alt="phone">
+                 </a> 
+                </div>
+             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="header-banner">
+          <!-- <div class="container"> -->
+            <div class="promo-banner">
+              <div class="left-block">
+                <h2 class="banner-title body">
+                  Men’s Barbershop<br>
+                  in The Middle East
+                </h2>
+                <div class="button-small">
+                  <button class="btn--small">
+                    Book now
+                  </button>
+                </div>
+              </div>
+  
+              <div class="right-block pt-90">
+                <button class="btn__large">
+                  THE HIGHEST RATED
+                </button>
+                <p class="paragraph paragraph-large">
+                  Text that is placed at the bottom of the heading to reveal details
+                </p>
+              </div>
+            </div>
+          <!-- </div>              -->
+        </div>  
+      </div>
+      
+      <section class="benefits pt-100">
+         <div class="container">
+            <div class="benefits-items">
+              <div class="benefits-1">
+                <img class="pl-100" src="./src/assets/images/benefits-icon/icon1.svg" alt="icon1">
+                <h3 class="h3">
+                  Briefly describe the benefit
+                </h3>
+                <h6 class="subtitle3">
+                  Long text, in two lines, for clarity 
+                  <br> and detail
+                </h6>
+              </div>
+  
+              <div class="benefits-2">
+                <img class="pl-100" src="./src/assets/images/benefits-icon/icon2.svg" alt="icon2">
+                <h3 class="h3">
+                  Briefly describe the benefit
+                </h3>
+                <h6 class="subtitle3">
+                  Long text, in two lines, for clarity 
+                  <br> and detail
+                </h6>
+              </div>
+  
+              <div class="benefits-3">
+                <img class="pl-100" src="./src/assets/images/benefits-icon/icon3.svg" alt="icon3">
+                <h3 class="h3">
+                  Briefly describe the benefit
+                </h3>
+                <h6 class="subtitle3">
+                  Long text, in two lines, for clarity 
+                  <br> and detail
+                </h6>
+              </div>
+            </div>
+          </div>
+      </section>
+      
+    </header>
+    <main>
+      <section class="about-us">
+        <div class="container">
+          <div class="about-us-description">
+            <div>
+              <h2 class="h2 text-center">
+                About Us
+              </h2>
+              <h4 class="h4-subtitle subtitle2">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
+              </h4>
+            </div>         
+          </div>
+          
+          <div class="banner-about-us">
+            <div class="container">
+              <div class="images-about-us">  
+                <img class="images-about-us__first" src="./src/assets/images/about-us/about-us1.jpg" alt="about-us1">
+                <img class="images-about-us__second" src="./src/assets/images/about-us/about-us2.jpg" alt="about-us2">
+                <img class="images-about-us__third" src="./src/assets/images/about-us/about-us3.jpg" alt="about-us3">
+                <img class="images-about-us__fourth" src="./src/assets/images/about-us/about-us4.jpg" alt="about-us4">
+                <img class="images-about-us__fifth" src="./src/assets/images/about-us/about-us5.jpg" alt="about-us5">
+                <img class="images-about-us__sixth" src="./src/assets/images/about-us/about-us6.jpg" alt="about-us6">
+              </div>
+            </div>
+          </div>
+    
+          <div class="about-us-button pt-60">
+            <div class="button-small pr-40">
+              <button class="button-orange btn--small">
+                Our masters and their masterpieces
+              </button>
+            </div>
+    
+            <button class="btn__instagram-btn">
+              Our Instagram
+            </button>
+          </div>
+        </div>  
+      </section>
+
+     <section class="testimonials pt-50">
+      <div class="container">
+        <div class="testimonials-description">
+          <div>
+            <h2 class="h2 text-center">
+              Testimonials
+            </h2>
+          
+            <h4 class="h4-subtitle subtitle2">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+              Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
+            </h4>
+          </div>         
+        </div>
+        <div class="barbers-banner swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="barbers-banner__item">
+                <div class="barber-item">
+                    <img src="./src/assets/images/barbers/barber1.jpg" alt="barber1">
+                    <h6 class="subtitle1">
+                      Describe the feedback or end result the person received after interacting with you.
+                      What exactly did it give him.
+                      You can describe the result in numbers to be specific.
+                    </h6>
+                    <a class="barber-item__link a4" href="#">Read full testimonial</a>
+                </div>
+
+                <div class="barber-item">
+                    <img src="./src/assets/images/barbers/barber2.jpg" alt="barber2">
+                    <h6 class="subtitle1">
+                      Describe the feedback or end result the person received after interacting with you.
+                      What exactly did it give him.
+                      You can describe the result in numbers to be specific.
+                    </h6>
+                    <a class="barber-item__link a4" href="#">Read full testimonial</a>
+                </div>  
+
+                <div class="barber-item">
+                    <img src="./src/assets/images/barbers/barber3.jpg" alt="barber3">
+                    <h6 class="subtitle1">
+                      Describe the feedback or end result the person received after interacting with you.
+                      What exactly did it give him.
+                      You can describe the result in numbers to be specific.
+                    </h6>
+                    <a class="barber-item__link a4" href="#">Read full testimonial</a>
+                </div>  
+
+                <div class="barber-item">
+                    <img src="./src/assets/images/barbers/barber4.jpg" alt="barber4">
+                    <h6 class="subtitle1">
+                      Describe the feedback or end result the person received after interacting with you.
+                      What exactly did it give him.
+                      You can describe the result in numbers to be specific.
+                    </h6>
+                    <a class="barber-item__link a4" href="#">Read full testimonial</a>  
+                </div>                   
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="barbers-banner__item">
+                  <div class="barber-item">
+                    <img src="./src/assets/images/barbers/barber1.jpg" alt="barber1">
+                    <h6 class="subtitle1">
+                      Describe the feedback or end result the person received after interacting with you.
+                      What exactly did it give him.
+                      You can describe the result in numbers to be specific.
+                    </h6>
+                    <a class="barber-item__link a4" href="#">Read full testimonial</a>
+                  </div>
+
+                  <div class="barber-item">
+                    <img src="./src/assets/images/barbers/barber2.jpg" alt="barber2">
+                    <h6 class="subtitle1">
+                      Describe the feedback or end result the person received after interacting with you.
+                      What exactly did it give him.
+                      You can describe the result in numbers to be specific.
+                    </h6>
+                    <a class="barber-item__link a4" href="#">Read full testimonial</a>
+                  </div>  
+
+                  <div class="barber-item">
+                    <img src="./src/assets/images/barbers/barber3.jpg" alt="barber3">
+                    <h6 class="subtitle1">
+                      Describe the feedback or end result the person received after interacting with you.
+                      What exactly did it give him.
+                      You can describe the result in numbers to be specific.
+                    </h6>
+                    <a class="barber-item__link a4" href="#">Read full testimonial</a>
+                  </div>  
+
+                  <div class="barber-item">
+                    <img src="./src/assets/images/barbers/barber4.jpg" alt="barber4">
+                    <h6 class="subtitle1">
+                      Describe the feedback or end result the person received after interacting with you.
+                      What exactly did it give him.
+                      You can describe the result in numbers to be specific.
+                    </h6>
+                    <a class="barber-item__link a4" href="#">Read full testimonial</a>  
+                  </div>                   
+              </div>
+            </div>     
+            </div>
+            <div class="swiper-button-next barbers-banner__next-btn"></div>
+            <div class="swiper-button-prev barbers-banner__prev-btn"></div>
+          </div>
+        </div>  
+      </div>
+     </section>
+
+     <section class="our-price pt-60">
+      <div class="container">
+        <div class="our-price-description">
+          <div>
+            <h2 class="h2 text-center">
+              Our Price
+            </h2>
+          
+            <h4 class="h4-subtitle subtitle2">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+              Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
+            </h4>
+          </div>         
+        </div>
+        <div class="container">
+          <div class="haircut-price">
+            <div class="prices-item pt-60">
+              <img src="./src/assets/images/price-images/image1.jpg" alt="images1">
+              <h5 class="h5">Haircuts</h5>
+              <div class="services-description">
+                <div class="services">
+                  <div class="haircut">
+                    <span class="span1">Regular Haircut</span><br>
+                   <span class="span1">Haircut + Shave</span><br>
+                   <span class="span1">Haircut + Beard Trim</span><br>
+                   <span class="span1">Beard Trim</span><br>
+                   <span class="span1">Hair Tatoo</span><br>
+                   <span class="span1">Facial</span><br>             
+                  </div>
+    
+                 <div class="time pl-20">
+                   <span class="span3">60 min</span><br>
+                   <span class="span3">60 min</span><br>
+                   <span class="span3">60 min</span><br>
+                   <span class="span3">60 min</span><br>
+                   <span class="span3">60 min</span><br>
+                   <span class="span3">60 min</span><br>
+                 </div>
+  
+                 <div class="price pl-20">
+                   <span class="span2">$20</span><br>
+                   <span class="span2">$19</span><br>
+                   <span class="span2">$30</span><br>
+                   <span class="span2">$22</span><br>
+                   <span class="span2">$45</span><br>
+                   <span class="span2">$15</span><br>
+                 </div>
+                </div>           
+              </div>
+            </div>
+            <div class="prices-item pt-60">
+              <img src="./src/assets/images/price-images/image2.jpg" alt="images2">
+              <h5 class="h5">Beard & Mo</h5>
+              <div class="services-description">
+                <div class="services">
+                  <div class="haircut">
+                    <span class="span1">Regular Haircut</span><br>
+                   <span class="span1">Haircut + Shave</span><br>
+                   <span class="span1">Haircut + Beard Trim</span><br>
+                   <span class="span1">Beard Trim</span><br>
+                   <span class="span1">Hair Tatoo</span><br>
+                   <span class="span1">Facial</span><br>             
+                  </div>
+    
+                 <div class="time pl-20">
+                   <span class="span3">60 min</span><br>
+                   <span class="span3">60 min</span><br>
+                   <span class="span3">60 min</span><br>
+                   <span class="span3">60 min</span><br>
+                   <span class="span3">60 min</span><br>
+                   <span class="span3">60 min</span><br>
+                 </div>
+  
+                 <div class="price pl-20">
+                   <span class="span2">$20</span><br>
+                   <span class="span2">$19</span><br>
+                   <span class="span2">$30</span><br>
+                   <span class="span2">$22</span><br>
+                   <span class="span2">$45</span><br>
+                   <span class="span2">$15</span><br>
+                 </div>
+                </div>           
+              </div>
+            </div>
+            <div class="prices-item pt-60">
+              <img src="./src/assets/images/price-images/image3.jpg" alt="image3">
+              <h5 class="h5">Shaving</h5>
+              <div class="services-description">
+                <div class="services">
+                  <div class="haircut">
+                    <span class="span1">Regular Haircut</span><br>
+                   <span class="span1">Haircut + Shave</span><br>
+                   <span class="span1">Haircut + Beard Trim</span><br>
+                   <span class="span1">Beard Trim</span><br>
+                   <span class="span1">Hair Tatoo</span><br>
+                   <span class="span1">Facial</span><br>             
+                  </div>
+    
+                 <div class="time pl-20">
+                   <span class="span3">60 min</span><br>
+                   <span class="span3">60 min</span><br>
+                   <span class="span3">60 min</span><br>
+                   <span class="span3">60 min</span><br>
+                   <span class="span3">60 min</span><br>
+                   <span class="span3">60 min</span><br>
+                 </div>
+  
+                 <div class="price pl-20">
+                   <span class="span2">$20</span><br>
+                   <span class="span2">$19</span><br>
+                   <span class="span2">$30</span><br>
+                   <span class="span2">$22</span><br>
+                   <span class="span2">$45</span><br>
+                   <span class="span2">$15</span><br>
+                 </div>
+                </div>           
+              </div>
+            </div>
+            <div class="prices-item pt-60">
+              <img src="./src/assets/images/price-images/image4.jpg" alt="image4">
+              <h5 class="h5">Waxing</h5>
+              <div class="services-description">
+                <div class="services">
+                  <div class="haircut">
+                    <span class="span1">Regular Haircut</span><br>
+                   <span class="span1">Haircut + Shave</span><br>
+                   <span class="span1">Haircut + Beard Trim</span><br>
+                   <span class="span1">Beard Trim</span><br>
+                   <span class="span1">Hair Tatoo</span><br>
+                   <span class="span1">Facial</span><br>             
+                  </div>
+    
+                 <div class="time pl-20">
+                   <span class="span3">60 min</span><br>
+                   <span class="span3">60 min</span><br>
+                   <span class="span3">60 min</span><br>
+                   <span class="span3">60 min</span><br>
+                   <span class="span3">60 min</span><br>
+                   <span class="span3">60 min</span><br>
+                 </div>
+  
+                 <div class="price pl-20">
+                   <span class="span2">$20</span><br>
+                   <span class="span2">$19</span><br>
+                   <span class="span2">$30</span><br>
+                   <span class="span2">$22</span><br>
+                   <span class="span2">$45</span><br>
+                   <span class="span2">$15</span><br>
+                 </div>
+                </div>           
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+     </section>
+
+     <section class="consultation pt-100 pb-60">
+      <div class="container">
+        <div class="consultation-banner">
+          <div class="consultation-description text-center">
+            <div class="">
+              <h4 class="h4">
+                Get in consultation with our expert barbers
+              </h4>
+              <a href="#" class="a5">Expand Call-to-Action Details</a>        
+            </div> 
+          </div>
+
+          <div class="container">
+            <div class="consultation-forms pt-60">
+              <form class="form">
+                <div class="form__input-wrapper">
+                  <label for="search-input-id" class="form__label input-text">Enter your phone number</label>
+                  <input id="search-input-id" class="form__input input-text" type="tel" />
+                </div>
+              </form>
+              
+              <form class="form">
+                <div class="form__input-wrapper">
+                  <label for="email-input-id" class="form__label input-text">E-mail</label>
+                  <input id="email-input-id" class="form__input input-text" type="text" />
+                </div>
+              </form>    
+             
+             <button class="btn--small2">Book now</button>
+            </div>
+            <div class="personal-data pt-60 text-center">
+              <input type="checkbox">
+              <span class="span5">
+               By clicking on the button, you agree to the terms of processing personal data
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+
+     <section class="contacts">
+      <div class="container">
+        <div class="contacts-banner">
+         <div class="banner-block mt-60">
+          <h2 class="h2 pl-30">
+            Contacts
+          </h2>
+
+         <div class="a-contacts pl-30">
+            <div class="container">
+
+             <img src="./src/assets/images/contacts-icons/phone-icon.svg" alt="phone-icon">
+             <a href="#" class="a5">8 (800) 000-00-00</a><br>
+             <img src="./src/assets/images/contacts-icons/mail-icon.svg" alt="phone-icon">
+             <a href="#" class="a5">info@sitename.com</a><br>
+             <img src="./src/assets/images/contacts-icons/point-icon.svg" alt="phone-icon">
+             <a href="#" class="a5">302 W 50th St, NY, NY 10019</a><br>
+             <img src="./src/assets/images/contacts-icons/time-icon.svg" alt="phone-icon">
+             <a href="#" class="a5">Daily from 9 to 20</a><br>
+             
+            </div>
+         </div>
+
+        </div>
+        </div>
+      </div>
+     </section>
+    </main>
+    <footer class="footer">
+      <section class="rights-section">
+        <div class="rights pt-20">
+          <span class="span6">
+            &#169; All rights reserved
+          </span>
+        </div>
+
+        <div class="layout creator pt-20">
+          <span class="span6">
+            Icons by Eucalyp on Flaticons<br>
+            Images by Unsplash and Pexels
+          </span>
+        </div>
+      </section>
+    
+    </footer>
+
+    <aside class="drawer">
+      <button class="drawer__close">x</button>
+    </aside>
+    
+  </body>
 </html>

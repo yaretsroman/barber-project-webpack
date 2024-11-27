@@ -1,0 +1,20 @@
+@import '../../scss/colors.scss';
+
+.consultation {
+    background-color: map-get($brownColors, 'brown2');
+
+}
+
+
+.consultation-banner {
+    background-color: map-get($orangeColors, 'orange1');
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.consultation-forms {
+    display: flex;
+    justify-content: space-evenly; 
+    flex-wrap: wrap; 
+}
+

@@ -1,0 +1,20 @@
+@import '../../scss/colors.scss';
+
+.button-text-large {
+  font-family: 'PlayfairDisplay';
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: map-get($whiteColors, 'white1');
+}
+
+.button-text-small {
+  font-family: 'PlayfairDisplay';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: map-get($whiteColors, 'white1');
+}
+  

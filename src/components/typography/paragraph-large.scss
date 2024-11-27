@@ -1,0 +1,9 @@
+.paragraph-large {
+    font-family: 'FiraSans';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: capitalize;
+    color: map-get($whiteColors, 'white1');
+}
+  

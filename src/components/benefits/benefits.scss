@@ -1,0 +1,11 @@
+@import '../../scss/colors.scss';
+
+.benefits-items {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.benefits {
+    background-color: map-get($brownColors, 'brown1');
+}

@@ -1,0 +1,46 @@
+@import '../../scss/colors.scss';
+
+.h2 {
+    font-family: 'FiraSans';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: map-get($whiteColors, 'white1');
+
+}
+  
+.h3 {
+   font-family: 'FiraSans';
+   font-size: 24px;
+   font-weight: 600;
+   line-height: 32px;
+   text-transform: capitalize;
+   color: map-get($whiteColors, 'white2');
+}
+ 
+.h4 {
+   font-family: 'PlayfairDisplay';
+   font-size: 36px;
+   font-weight: 900;
+   line-height: 48px;
+   text-transform: capitalize;
+   color: map-get($blackColors, 'black1');
+}
+ 
+.h5 {
+   font-family: 'FiraSans';
+   font-size: 30px;
+   font-weight: 500;
+   line-height: 40px;
+   text-transform: capitalize;
+   color: map-get($whiteColors, 'white2');
+}
+ 
+.h6 {
+   font-family: 'FiraSans';
+   font-size: 14px;
+   font-weight: 700;
+   line-height: 21px;
+   text-transform: capitalize;
+}

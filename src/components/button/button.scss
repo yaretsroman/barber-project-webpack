@@ -1,0 +1,48 @@
+@import '../typography/button-text.scss';
+@import '../../scss/colors.scss';
+
+.btn {
+     
+    &__large {
+        cursor: pointer;
+        border-color: map-get($whiteColors, 'white1');
+        @extend .button-text-large;
+        padding: 10px, 25px, 10px, 25px;
+        background: transparent;
+        width: 221px;
+        height: 40px; 
+    }
+
+    &--small {
+        cursor: pointer;
+        @extend .button-text-small;
+        border: none;
+        background: map-get($orangeColors, 'orange1');
+        width: 194px;
+        height: 68px;  
+    }
+
+    &--small2 {
+        cursor: pointer;
+        @extend .button-text-small;
+        border: none;
+        background: map-get($blackColors, 'black1');
+        width: 194px;
+        height: 68px;  
+    }
+
+    &__instagram-btn {
+        cursor: pointer;
+        border-color: map-get($whiteColors, 'white1');
+        @extend .button-text-large;
+        padding: 10px, 25px, 10px, 25px;
+        background: transparent;
+        width: 194px;
+        height: 68px; 
+    }
+
+}
+
+.button-orange {
+    width: 432px;
+}

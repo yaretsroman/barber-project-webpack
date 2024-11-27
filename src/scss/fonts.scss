@@ -1,83 +1,52 @@
+
+
+/* FiraSans fonts */
+
 @font-face {
-  font-family: "Roboto";
-  font-weight: 900;
-  font-style: italic;
-  src: url("assets/fonts/Roboto/Roboto-BlackItalic.ttf") format("truetype");
+    font-family: FiraSans;
+    font-weight: 700;
+    font-style: normal;
+    src: url('assets/fonts/FiraSans/FiraSans-Bold.ttf') format("truetype");
 }
 
 @font-face {
-  font-family: "Roboto";
-  font-weight: 900;
-  font-style: normal;
-  src: url("assets/fonts/Roboto/Roboto-Black.ttf") format("truetype");
+    font-family: FiraSans;
+    font-weight: 400;
+    font-style: normal;
+    src: url('assets/fonts/FiraSans/FiraSans-Regular.ttf') format("truetype");
+}
+
+/* FiraSans fonts */
+
+/* ----------------------------------------------------- */
+
+/* PlayfairDisplay fonts */
+
+@font-face {
+    font-family: PlayfairDisplay;
+    font-weight: 900;
+    font-style: normal;
+    src: url('assets/fonts/PlayfairDisplay/PlayfairDisplay-Black.ttf') format("truetype");
 }
 
 @font-face {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-style: italic;
-  src: url("assets/fonts/Roboto/Roboto-BoldItalic.ttf") format("truetype");
+    font-family: PlayfairDisplay;
+    font-weight: 700;
+    font-style: normal;
+    src: url('assets/fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf') format("truetype");
 }
 
-@font-face {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-style: normal;
-  src: url("assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
-}
+/* PlayfairDisplay fonts */
+
+/* ----------------------------------------------------- */
+
+/* Montserrat fonts */
 
 @font-face {
-  font-family: "Roboto";
-  font-weight: 500;
-  font-style: italic;
-  src: url("assets/fonts/Roboto/Roboto-MediumItalic.ttf") format("truetype");
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: normal;
+    src: url('assets/fonts/Montserrat/Montserrat-Regular.ttf') format("truetype");
 }
 
-@font-face {
-  font-family: "Roboto";
-  font-weight: 500;
-  font-style: normal;
-  src: url("assets/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-style: italic;
-  src: url("assets/fonts/Roboto/Roboto-Italic.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-style: normal;
-  src: url("assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: 300;
-  font-style: italic;
-  src: url("assets/fonts/Roboto/Roboto-LightItalic.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: 300;
-  font-style: normal;
-  src: url("assets/fonts/Roboto/Roboto-Light.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: 100;
-  font-style: italic;
-  src: url("assets/fonts/Roboto/Roboto-ThinItalic.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: 100;
-  font-style: normal;
-  src: url("assets/fonts/Roboto/Roboto-Thin.ttf") format("truetype");
-}
+/* Montserrat fonts */

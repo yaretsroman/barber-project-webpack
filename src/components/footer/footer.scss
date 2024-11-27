@@ -1,0 +1,14 @@
+@import '../../scss/colors.scss';
+
+.footer {
+    display: flex;
+    justify-content: center;
+    min-height: 129px;
+    background: map-get($brownColors, 'brown2');
+    
+}
+
+.rights {
+    display: flex;
+    justify-content: center;
+}

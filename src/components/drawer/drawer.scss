@@ -1,0 +1,14 @@
+@import '../../scss/colors.scss';
+
+.drawer {
+    background-color: map-get($brownColors, 'brown1');
+    position: fixed;
+    top: 0;
+    left: -1000px;
+    bottom: 0;
+    width: 300px;
+    transition: left .5s;
+    &--active {
+        left: 0;
+    } 
+}

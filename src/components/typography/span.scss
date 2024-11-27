@@ -1,0 +1,56 @@
+@import '../../scss/colors.scss';
+
+.span1 {
+   font-family: 'FiraSans';
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 28px;
+   text-transform: capitalize;
+   color: map-get($whiteColors, 'white2');
+}
+  
+.span2 {
+  font-family: 'FiraSans';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: map-get($whiteColors, 'white1');
+
+}
+
+.span3 {
+  font-family: 'FiraSans';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: map-get($whiteColors, 'white3');
+}
+
+.span4 {
+  font-family: 'FiraSans';
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: capitalize;
+}
+
+.span5 {
+  font-family: 'FiraSans';
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: map-get($whiteColors, 'white2');
+}
+
+.span6 {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: map-get($whiteColors, 'white1');
+
+}

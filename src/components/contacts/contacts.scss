@@ -1,0 +1,17 @@
+@import '../../scss/colors.scss';
+
+.contacts {
+    height: 650px;
+    background: url('../../assets/images/map-image.svg');
+    background-repeat: no-repeat;
+}
+
+.contacts-banner {
+   display: flex;
+}
+
+.banner-block {
+    width: 480px;
+    height: 530px;
+    background: map-get($brownColors, 'brown2');
+}
