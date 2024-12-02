@@ -15,8 +15,41 @@
     display: flex;
 }
 
-.haircut-price {
+.service-table {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.table {
+    width: 100%;
+    border-right: 1px solid #B7AAA2;
+}
+
+// .table thead tr {
+//     display: flex;
+//     padding-top: 12px;
+//     padding-bottom: 12px;
+// }
+
+.table tbody tr td {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.time {
+    font-family: 'FiraSans';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: map-get($whiteColors, 'white3');
+}
+
+.price {
+    font-family: 'FiraSans';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: map-get($whiteColors, 'white1');
 }
