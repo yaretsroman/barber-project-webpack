@@ -5,9 +5,8 @@
    background-color: map-get($brownColors, 'brown2');
    &__item {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
    }
-
    &__next-btn,
    &__prev-btn {
     &::after {
@@ -17,12 +16,14 @@
    &__next-btn {
     background-image: url('../../assets/images/btn-swiper/next-btn.svg');
     background-repeat: no-repeat;
-    background-position: center center;
+    position: absolute;
+    top: 26%;
    }
    &__prev-btn {
     background-image: url('../../assets/images/btn-swiper/prev-btn.svg');
     background-repeat: no-repeat;
-    background-position: center center;
+    position: absolute;
+    top: 26%;
    }
 }
 

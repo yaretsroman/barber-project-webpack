@@ -11,7 +11,7 @@ import './components/button/button';
 import './components/benefits/benefits';
 import './components/about-us/about-us';
 import './components/testimonials/testimonials';
-import './components/card/card';
+import './components/barbers-banner/barbers-banner';
 import './components/price/price';
 import './components/consultation/consultation';
 import './components/form/form';
