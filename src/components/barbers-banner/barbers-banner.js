@@ -3,13 +3,13 @@ import 'swiper/css/navigation';
 
 import Swiper, { Navigation } from 'swiper';
 
-new Swiper('.mySwiper', {
+new Swiper('.barbers-content', {
   modules: [Navigation],
   slidesPerView: 4,
   spaceBetween: 28,
   navigation: {
-    nextEl: '.barbers-banner__next-btn',
-    prevEl: '.barbers-banner__prev-btn',
+    nextEl: '.barbers-content__next-btn',
+    prevEl: '.barbers-content__prev-btn',
   },
 
   breakpoints: {
