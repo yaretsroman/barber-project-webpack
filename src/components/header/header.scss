@@ -1,7 +1,14 @@
 @import '../../scss/colors.scss';
+@import '../../scss/breakpoints.scss';
 
 .header {
-    padding-top: 38px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
     background-color: map-get($brownColors, 'brown2');
-    min-height: 870px;
+
+    @media screen and (min-width: map-get($breakpoints, 'lg')) {
+        position: relative;
+        height: 100px;
+    }
 }

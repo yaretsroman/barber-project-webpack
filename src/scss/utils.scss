@@ -10,7 +10,9 @@ $offsets: (
   20: 20px,
   30: 30px,
   40: 40px,
-  10: 10px
+  12: 12px,
+  10: 10px,
+  9: 9px,
 );
 
 @each $key, $value in $offsets {

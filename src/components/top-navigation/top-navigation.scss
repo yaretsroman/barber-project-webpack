@@ -1,27 +1,32 @@
 @import '../../scss/colors.scss';
 @import '../../scss/breakpoints.scss';
 
-.top-navigation {
+.nav-content {
+    height: 65px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     &__mobile-btn {
         background: transparent;
         color: white;
-        border-color: white;
+        border: none;
         @media screen and (min-width: map-get($breakpoints, 'lg')) {
             display: none;
         }
     }
-    
+    @media screen and (min-width: map-get($breakpoints, 'lg')) {
+        height: 83px;
+        display: flex;
+        justify-content: space-between;
+        background-color: map-get($brownColors, 'brown2');
+    }
 }
 
 .logo-top {
-    display: flex;
+    width: 150px;
 }
 
-.navigation {
-    display: flex;
-    justify-content: space-evenly;
+.nav {
     &__link {
         &:hover {
             color: map-get($orangeColors, 'orange1');
@@ -29,15 +34,27 @@
     }
 }
 
-.address-links {
+.nav__list{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0px 0px 10px;
+}
+
+.address-links {
+    width: 80px;
+    display: flex; 
+    justify-content: space-between;
+    @media screen and (min-width: map-get($breakpoints, 'md')) {
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .address {
     display: flex;
-    width: 156px;
-    height: 38px;
+    gap: 15px;
     &__link {
         &:hover {
             color: map-get($orangeColors, 'orange1');
@@ -47,9 +64,7 @@
 
 .telephone {
     display: flex;
-    justify-content: space-between;
-    width: 197px;
-    height: 38px;
+    gap: 15px;
     &__link {
         &:hover {
             color: map-get($orangeColors, 'orange1');

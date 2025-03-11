@@ -50,4 +50,18 @@
   color: map-get($whiteColors, 'white3');
 }
   
-  
+.a6 {
+  text-decoration: none;
+  font-family: 'FiraSans';
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: map-get($whiteColors, 'white2');
+  display: block;
+  margin-bottom: 20px;
+}
+
+li {
+  list-style: none;
+}

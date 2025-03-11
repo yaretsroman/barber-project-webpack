@@ -3,6 +3,10 @@
 @import './scss/typography.scss';
 @import './scss/utils.scss';
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-size: $mainFontSize;
     line-height: $mainFontLineHeight;
