@@ -2,7 +2,6 @@
 @import '../../scss/breakpoints.scss';
 
 .nav-content {
-    height: 65px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +14,7 @@
         }
     }
     @media screen and (min-width: map-get($breakpoints, 'lg')) {
-        height: 83px;
+        padding-top: 17px;
         display: flex;
         justify-content: space-between;
         background-color: map-get($brownColors, 'brown2');
@@ -46,7 +45,7 @@
     display: flex; 
     justify-content: space-between;
     @media screen and (min-width: map-get($breakpoints, 'md')) {
-        width: 400px;
+        width: 387px;
         display: flex;
         justify-content: space-between;
     }

@@ -1,13 +1,12 @@
 @import '../../scss/colors.scss';
 
 .h2 {
-    font-family: 'FiraSans';
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 60px;
-    text-transform: capitalize;
-    color: map-get($whiteColors, 'white1');
-
+   font-family: 'FiraSans';
+   font-size: 48px;
+   font-weight: 700;
+   line-height: 60px;
+   text-transform: capitalize;
+   color: map-get($whiteColors, 'white1');
 }
   
 .h3 {

@@ -1,22 +1,73 @@
+@import '../../scss/colors.scss';
+@import '../../scss/breakpoints.scss';
+
+.promo-section {
+    padding-top: 60px;
+    background: linear-gradient(to bottom, map-get($brownColors, 'brown2') 76%, map-get($brownColors, 'brown1') 24%);
+    @media screen and (min-width: map-get($breakpoints, 'lg')) {
+        padding-top: 28px;
+    }
+}
+
 .header-banner {
+    display: flex;
     max-width: 100%;
     height: 1000px;
-    background: url('../../assets/images/banner.jpg') center no-repeat;
+    background: url('../../assets/images/banner-ton.jpg') center no-repeat;
+    @media screen and (max-width: map-get($breakpoints, 'md')) {
+        background: url('../../assets/images/mobile-banner-ton.jpg') center no-repeat;
+        background-size: 734px 1096px;
+    }
+    @media screen and (max-width: map-get($breakpoints, 'sm')) {
+        background: url('../../assets/images/mobile-banner-ton.jpg') center no-repeat;
+        background-size:534px 796px;
+        height: 800px;
+    }
 }
 
-.promo-banner {
+.header-banner-block {
+    width: 1053px;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    padding-top: 47px;
+    @media screen and (max-width: map-get($breakpoints, 'lg')) {
+        display: grid;
+        grid-template-rows: 200px;
+    }
+    @media screen and (max-width: map-get($breakpoints, 'md')) {
+        padding-top: 20px;
+        grid-template-rows: 180px;
+    }
+    @media screen and (max-width: map-get($breakpoints, 'sm')) {
+        padding-top: 10px;
+        grid-template-rows: 535px;
+    }
 }
 
-@media screen and (max-width: 990px) {
-    .promo-banner {
-        justify-content: center;
-        position: absolute;
+.left-block {
+    display: flex;
+    flex-direction: column;
+    gap: 670px;
+    @media screen and (max-width: map-get($breakpoints, 'md')) {
+        gap: 735px;
+    }
+    @media screen and (max-width: map-get($breakpoints, 'sm')) {
+        gap: 550px;
+    }
+    @media screen and (max-width: 500px) {
+        gap: 400px;
+    }
+}
+
+.banner-title {
+    @media screen and (max-width: map-get($breakpoints, 'sm')) {
+        font-size: 55px;
     }
 }
 
 .right-block {
-    width: 301px;
+    padding-top: 32px;
+    @media screen and (max-width: map-get($breakpoints, 'sm')) {
+        padding-top: 15px;
+    }
 }
