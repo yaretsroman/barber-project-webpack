@@ -1,11 +1,59 @@
 @import '../../scss/colors.scss';
+@import '../../scss/breakpoints.scss';
 
 .benefits-items {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
+    @media screen and (max-width: map-get($breakpoints, 'lg')) {
+        justify-content: space-evenly;
+    }
+    @media screen and (max-width: map-get($breakpoints, 'md')) {
+        justify-content: space-evenly;
+        padding-top: 0;
+    }
+    @media screen and (max-width: map-get($breakpoints, 'sm')) {
+        justify-content: space-evenly;
+    }
+    @media screen and (max-width: map-get($breakpoints, 'xs')) {
+        justify-content: space-evenly;
+    }
 }
 
 .benefits {
+    height: 422px;
+    display: flex;
+    align-items: center;
     background-color: map-get($brownColors, 'brown1');
+    @media screen and (max-width: map-get($breakpoints, 'lg')) {
+        height: 500px;
+    }
+    @media screen and (max-width: map-get($breakpoints, 'md')) {
+        height: 730px;
+    }
+    @media screen and (max-width: map-get($breakpoints, 'sm')) {
+        height: 780px;
+    }
+}
+
+.benefits-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .benefits-image {
+        height: 75px;
+    }
+    .subtitle-block {
+        width: 250px;
+    }
+    @media screen and (max-width: map-get($breakpoints, 'lg')) {
+        padding: 0px 35px 0px 35px;
+        margin-top: 50px;
+    }
+    @media screen and (max-width: map-get($breakpoints, 'md')) {
+        padding: 0px 35px 0px 35px;
+    }
+    @media screen and (max-width: map-get($breakpoints, 'sm')) {
+        margin: 35px 0px 0px 0px;
+    }
 }
