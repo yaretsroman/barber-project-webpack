@@ -4,24 +4,41 @@
 .about-us {
     background-color: map-get($brownColors, 'brown2');
     min-height: 870px;
+    @media screen and (max-width: map-get($breakpoints, 'sm')) {
+        padding-top: 55px;
+    }
 }
 
-.images-about-us {
+.about-us-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.h4-subtitle {
+  max-width: 590px;
+}
+
+.banner-about-us {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media screen and (max-width: map-get($breakpoints, 'xl')) {
+       justify-content: center;
+    }
+}
+
+.first-block {
     display: grid;
-    grid-template-columns: repeat(4, 280px);
+    grid-template-columns: repeat(1, 280px);
     grid-template-rows: 337px;
     grid-gap: 20px;
     grid-template-areas: 
-    'first first second third'
-    'fourth fifth sixth sixth';
+    'first first'
+    'fourth fifth';
     &__first {
         grid-area: first;
-    }
-    &__second {
-        grid-area: second;
-    }
-    &__third {
-        grid-area: third;
     }
     &__fourth {
         grid-area: fourth;
@@ -29,33 +46,168 @@
     &__fifth {
         grid-area: fifth;
     }
+    @media screen and (max-width: map-get($breakpoints, 'xl')) {
+      grid-template-columns: repeat(1, 280px);
+      grid-template-rows: 337px;
+      grid-template-areas:
+      'first first'
+      'fourth fifth';
+    } 
+    @media screen and (max-width: 600px) {
+        grid-template-columns: repeat(1, 220px);
+        grid-template-rows: 280px;
+    }  
+    .first-img {
+        @media screen and (max-width: 600px) {
+            height: 267px;
+        }  
+    }
+    .fourth-img {
+        @media screen and (max-width: 600px) {
+            height: 220px;
+        }  
+    }
+    .fifth-img {
+        @media screen and (max-width: 600px) {
+            height: 220px;
+        }  
+    }
+    @media screen and (max-width: 485px) {
+        grid-template-columns: repeat(1, 190px);
+        grid-template-rows: 240px;
+    }  
+    .first-img {
+        @media screen and (max-width: 485px) {
+            height: 238px;
+        }  
+    }
+    .fourth-img {
+        @media screen and (max-width: 485px) {
+            height: 200px;
+        }  
+    }
+    .fifth-img {
+        @media screen and (max-width: 485px) {
+            height: 200px;
+        }  
+    }
+    @media screen and (max-width: 420px) {
+        grid-template-columns: repeat(1, 150px);
+        grid-template-rows: 187px;
+    }  
+    .first-img {
+        @media screen and (max-width: 420px) {
+            height: 187px;
+        }  
+    }
+    .fourth-img {
+        @media screen and (max-width: 420px) {
+            height: 150px;
+        }  
+    }
+    .fifth-img {
+        @media screen and (max-width: 420px) {
+            height: 150px;
+        }  
+    }
+}
+
+.second-block {
+    display: grid;
+    grid-template-columns: repeat(1, 280px);
+    grid-template-rows: 280px;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'second third'
+    'sixth sixth';
+    &__second {
+        grid-area: second;
+    }
+    &__third {
+        grid-area: third;
+    }
     &__sixth {
         grid-area: sixth;
     }
-
-    @media screen and (max-width: map-get($breakpoints, 'lg')) {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(4, 1fr);
+    @media screen and (max-width: map-get($breakpoints, 'xl')) {
+      padding-top: 20px;
+      grid-template-columns: repeat(1, 280px);
+      grid-template-rows: 337px;
       grid-template-areas:
-      'first first'
       'sixth sixth'
-      'second third'
-      'fourth fifth';
+      'second third';
+    }
+    @media screen and (max-width: 600px) {
+        grid-template-columns: repeat(1, 220px);
+        grid-template-rows: 280px;
+    }  
+    .sixth-img {
+        @media screen and (max-width: 600px) {
+            height: 267px;
+        }  
+    }
+    .second-img {
+        @media screen and (max-width: 600px) {
+            height: 220px;
+        }  
+    }
+    .third-img {
+        @media screen and (max-width: 600px) {
+            height: 220px;
+        }  
+    }
+    @media screen and (max-width: 485px) {
+        grid-template-columns: repeat(1, 190px);
+        grid-template-rows: 240px;
+    }  
+    .sixth-img {
+        @media screen and (max-width: 485px) {
+            height: 238px;
+        }  
+    }
+    .second-img {
+        @media screen and (max-width: 485px) {
+            height: 200px;
+        }  
+    }
+    .third-img {
+        @media screen and (max-width: 485px) {
+            height: 200px;
+        }  
+    }
+    @media screen and (max-width: 420px) {
+        grid-template-columns: repeat(1, 150px);
+        grid-template-rows: 187px;
+    }  
+    .sixth-img {
+        @media screen and (max-width: 420px) {
+            height: 187px;
+        }  
+    }
+    .second-img {
+        @media screen and (max-width: 420px) {
+            height: 150px;
+        }  
+    }
+    .third-img {
+        @media screen and (max-width: 420px) {
+            height: 150px;
+        }  
     }
 }
 
-.about-us-description {
+.about-us-buttons {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-}
-
-.h4-subtitle {
-  width: 580px;
-}
-
-.about-us-button {
-    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    gap: 25px;
+    @media screen and (max-width: map-get($breakpoints, 'xl')) {
+        flex-direction: column;
+        align-items: center;
+     }
+    .our-masters-btn {
+        @media screen and (max-width: map-get($breakpoints, 'sm')) {
+            max-width: 315px;
+         }
+    }
 }
