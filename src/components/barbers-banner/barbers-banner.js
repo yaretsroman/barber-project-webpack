@@ -16,10 +16,13 @@ new Swiper('.barbers-content', {
     0: {
       slidesPerView: 1,
     },
-    620: {
+    650: {
       slidesPerView: 2,
     },
-    1024: {
+    800: {
+      slidesPerView: 3,
+    },
+    1225: {
       slidesPerView: 4,
     },
   },

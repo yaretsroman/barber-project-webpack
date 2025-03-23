@@ -1,16 +1,27 @@
 @import '../../scss/colors.scss';
+@import '../../scss/breakpoints.scss';
 
 .testimonials {
+    min-height: 980px;
     background-color: map-get($brownColors, 'brown2');
+    @media screen and (max-width: map-get($breakpoints, 'md')) {
+        min-height: 865px;
+        padding-top: 80px;
+    }
+    @media screen and (max-width: map-get($breakpoints, 'sm')) {
+        min-height: 835px;
+        padding-top: 55px;
+    }
 }   
 
-.subtitle1 {
-    width: 277px;
+.testimonials-subtitle {
+    max-width: 590px;
 }
 
 .testimonials-description {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
 }
 

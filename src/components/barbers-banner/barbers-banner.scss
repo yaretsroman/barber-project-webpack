@@ -1,13 +1,13 @@
 @import '../../scss/colors.scss';
 
 .barbers-container {
-    max-width: 1250px;
+    max-width: 1300px;
     width: 100%;
-    padding: 30px;
 }
 
 .barbers-content {
     margin: 0 40px;
+    padding: 20px 20px 0px 20px;
     overflow: hidden;
     background-color: map-get($brownColors, 'brown2');
    &__item {
@@ -33,6 +33,8 @@
 }
 
 .barber-item {
+    display: flex;
+    flex-direction: column;
     &__link {
         &:hover {
             color: map-get($whiteColors, 'white1');

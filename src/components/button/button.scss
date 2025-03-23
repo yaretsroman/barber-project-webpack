@@ -2,7 +2,6 @@
 @import '../../scss/colors.scss';
 
 .btn {
-     
     &__large {
         cursor: pointer;
         border-color: map-get($whiteColors, 'white1');

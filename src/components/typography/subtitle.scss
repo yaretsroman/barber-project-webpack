@@ -7,6 +7,8 @@
     line-height: 24px;
     text-transform: capitalize;
     color: map-get($whiteColors, 'white1');
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .subtitle2 {
@@ -26,4 +28,15 @@
   text-transform: capitalize;
   color: map-get($whiteColors, 'white3');
   margin: 0;
+}
+
+.subtitle4 {
+  color: #FFFFFF;
+  font-family: Fira Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  vertical-align: bottom;
+  margin-top: 30px;
 }

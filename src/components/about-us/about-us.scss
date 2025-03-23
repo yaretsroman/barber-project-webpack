@@ -4,6 +4,9 @@
 .about-us {
     background-color: map-get($brownColors, 'brown2');
     min-height: 870px;
+    @media screen and (max-width: map-get($breakpoints, 'xl')) {
+        padding-top: 70px;
+    }
     @media screen and (max-width: map-get($breakpoints, 'sm')) {
         padding-top: 55px;
     }
@@ -16,7 +19,7 @@
     flex-wrap: wrap;
 }
 
-.h4-subtitle {
+.about-us-subtitle {
   max-width: 590px;
 }
 
