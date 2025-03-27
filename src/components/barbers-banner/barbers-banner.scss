@@ -10,10 +10,6 @@
     padding: 20px 20px 0px 20px;
     overflow: hidden;
     background-color: map-get($brownColors, 'brown2');
-   &__item {
-    display: flex;
-    justify-content: center;
-   }
    &__next-btn,
    &__prev-btn {
     &::after {
@@ -30,14 +26,4 @@
     background-repeat: no-repeat;
     top: 30%;
    }
-}
-
-.barber-item {
-    display: flex;
-    flex-direction: column;
-    &__link {
-        &:hover {
-            color: map-get($whiteColors, 'white1');
-        }
-    }
 }

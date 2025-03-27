@@ -1,0 +1,11 @@
+@import '../../scss/colors.scss';
+
+.barber-item {
+    display: flex;
+    flex-direction: column;
+    &__link {
+        &:hover {
+            color: map-get($whiteColors, 'white1');
+        }
+    }
+}

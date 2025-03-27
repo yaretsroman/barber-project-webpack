@@ -1,0 +1,66 @@
+@import '../../scss/colors.scss';
+
+@keyframes openPopup {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -100%);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  @keyframes showOverlay {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
+
+.popup {
+    background-color: map-get($brownColors, 'brown1');
+    min-width: 520px;
+    min-height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+    animation: openPopup 1s;
+    &__close {
+        animation: openPopup 1s reverse infinite;
+    }
+
+    &__header {
+        min-height: 60px;
+        border-bottom: 1px solid map-get($brownColors, 'brown1');
+        padding: 24px;
+    }
+
+    &__content {
+      padding: 24px;
+      min-height: 60px;
+    }
+
+    &__footer {
+        min-height: 60px;
+        border-bottom: 1px solid map-get($brownColors, 'brown1');
+        padding: 24px;
+    }
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: map-get($blackColors, 'black50');
+    z-index: 9999;
+    animation: showOverlay 1s;
+}
