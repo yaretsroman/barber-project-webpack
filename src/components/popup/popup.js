@@ -1,7 +1,10 @@
 import './popup.scss';
 
 const body = document.body;
-const controls = document.querySelectorAll('.popup-control');
+const controlFirs = document.querySelectorAll('.popup-control-1');
+const controlSecond = document.querySelectorAll('.popup-control-2');
+const controlThird = document.querySelectorAll('.popup-control-3');
+const controlFourth = document.querySelectorAll('.popup-control-4');
 
 const createButton = (caption) => {
   const btn = document.createElement('button');
@@ -34,12 +37,12 @@ const createPopupHeader = (title, btn) => {
   return header;
 };
 
-const createPopupFooter = () => {
-  const footer = document.createElement('div');
-  footer.setAttribute('class', 'popup__footer');
+// const createPopupFooter = () => {
+//   const footer = document.createElement('div');
+//   footer.setAttribute('class', 'popup__footer');
 
-  return footer;
-};
+//   return footer;
+// };
 
 const createPopupBlock = () => {
   const popupBlock = document.createElement('div');
@@ -48,10 +51,10 @@ const createPopupBlock = () => {
   const setContent = (title, templateID) => {
     const btn = createButton('Go Back');
     const template = document.getElementById(templateID).content.cloneNode(true);
-    const popupFooter = createPopupFooter();
+    // const popupFooter = createPopupFooter();
     const popupHeader = createPopupHeader(title, btn);
     const popupContent = createContent(template);
-    popupBlock.append(popupHeader, popupContent, popupFooter);
+    popupBlock.append(popupHeader, popupContent);
   };
 
   return {
@@ -84,7 +87,16 @@ const onEscape = (evt) => {
   }
 };
 
-controls.forEach((el) => {
+controlFirs.forEach((el) => {
+  el.addEventListener('click', open);
+});
+controlSecond.forEach((el) => {
+  el.addEventListener('click', open);
+});
+controlThird.forEach((el) => {
+  el.addEventListener('click', open);
+});
+controlFourth.forEach((el) => {
   el.addEventListener('click', open);
 });
 

@@ -42,6 +42,15 @@
 
 }
 
+.popup__btn {
+    cursor: pointer;
+    @extend .button-text-small;
+    border: none;
+    background: map-get($orangeColors, 'orange1');
+    width: 120px;
+    height: 55px; 
+}
+
 .button-orange {
     width: 432px;
 }
