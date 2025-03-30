@@ -14,8 +14,6 @@ class Card extends HTMLElement {
       <div class="barber-item">
         <img class="preview" src="${this.imgUrl}" alt="barber">
         <h4 class="title subtitle4">${this.title}</h4>
-        <h6 class="description subtitle1">
-        ${this.description}
         </h6>
       </div>
     </div>

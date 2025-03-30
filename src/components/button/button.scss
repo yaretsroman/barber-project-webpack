@@ -49,6 +49,9 @@
     background: map-get($orangeColors, 'orange1');
     width: 120px;
     height: 55px; 
+    @media screen and (max-width: 600px) {
+        height: 35px;
+    }
 }
 
 .button-orange {

@@ -3,6 +3,8 @@
 .barber-item {
     display: flex;
     flex-direction: column;
+    max-width: 280px;
+    max-height: 512px;
     &__link {
         &:hover {
             color: map-get($whiteColors, 'white1');
@@ -10,3 +12,9 @@
     }
 }
 
+.in-popup {
+    padding: 15px;
+    @media screen and (max-width: 600px) {
+        padding: 0px;
+    }
+}

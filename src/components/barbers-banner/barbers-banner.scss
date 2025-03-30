@@ -1,8 +1,15 @@
 @import '../../scss/colors.scss';
+@import '../../scss/breakpoints.scss';
 
 .barbers-container {
     max-width: 1300px;
     width: 100%;
+    @media screen and (max-width: 1225px) {
+        max-width: 1050px;
+    }
+    @media screen and (max-width: map-get($breakpoints, 'sm')) {
+        max-width: 400px;
+    }
 }
 
 .barbers-content {

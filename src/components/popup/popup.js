@@ -49,7 +49,7 @@ const createPopupBlock = () => {
   popupBlock.setAttribute('class', 'popup');
 
   const setContent = (title, templateID) => {
-    const btn = createButton('Go Back');
+    const btn = createButton('<- Go Back');
     const template = document.getElementById(templateID).content.cloneNode(true);
     // const popupFooter = createPopupFooter();
     const popupHeader = createPopupHeader(title, btn);
