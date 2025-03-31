@@ -13,7 +13,7 @@ import './components/about-us/about-us';
 import './components/testimonials/testimonials';
 import './components/card/card.js';
 import './components/barbers-banner/barbers-banner';
-import './components/price/price';
+import './components/our-price/our-price';
 import './components/consultation/consultation';
 import './components/form/form';
 import './components/contacts/contacts';

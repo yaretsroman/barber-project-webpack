@@ -1,0 +1,103 @@
+@import '../../scss/colors.scss';
+@import '../../scss/breakpoints.scss';
+
+.service-container {
+    max-width: 1245px;
+    margin: 0 auto;
+    padding: 0 12px;
+    @media screen and (max-width: 1050px) {
+        max-width: 930px;
+    }
+}
+
+.our-price{
+    padding-top: 114px;
+    min-height: 1001px;
+    background-color: map-get($brownColors, 'brown1');
+    @media screen and (max-width: map-get($breakpoints, 'md')) {
+        padding-top: 50px;
+    }
+}
+
+.our-price-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service-table {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    @media screen and (max-width: 585px) {
+        padding-top: 15px;
+    }
+}
+
+.service-block {
+    width: 280px;
+    height: 579px;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 585px) {
+        border-bottom:  1px solid #B7AAA2;
+    }
+    @media screen and (max-width: 1225px) {
+        width: 250px;
+    }
+    @media screen and (max-width: 1050px) {
+        width: 340px;
+        height: 670px;
+    }
+    @media screen and (max-width: map-get($breakpoints, 'md')) {
+        width: 280px;
+        height: 350px;
+    }
+    @media screen and (max-width: 585px) {
+        width: 280px;
+        height: 315px;
+    }
+    .service-span {
+        padding: 20px 0px 17px 0px;
+    }
+    .service-img {
+        @media screen and (max-width: map-get($breakpoints, 'lg')) {
+            width: 315px;
+            margin: 0px 0px 0px 12px;
+        }
+        @media screen and (max-width: 769px) {
+            display: none;
+        }
+    }
+}
+
+.table {
+    border-right: 1px solid #B7AAA2;
+    @media screen and (max-width: 585px) {
+        border-right: none;
+    }
+    tr {
+        td {
+            padding: 0px 0px 8px 0px;
+        }
+    }
+}
+
+.time {
+    font-family: 'FiraSans';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: map-get($whiteColors, 'white3');
+}
+
+.price {
+    font-family: 'FiraSans';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: map-get($whiteColors, 'white1');
+}
