@@ -1,20 +1,49 @@
 @import '../../scss/colors.scss';
 
 .consultation {
-    background-color: map-get($brownColors, 'brown2');
-
+    height: 495px;
+    background: linear-gradient(to top, map-get($brownColors, 'brown2') 71%, map-get($brownColors, 'brown1') 29%);
 }
 
-
 .consultation-banner {
+    height: 375px;
     background-color: map-get($orangeColors, 'orange1');
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description-cons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .consultation-forms {
+    width: 880px;
     display: flex;
-    justify-content: space-evenly; 
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
+.personal-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.h4-cons {
+    font-family: 'PlayfairDisplay';
+   font-size: 36px;
+   font-weight: 900;
+   line-height: 48px;
+   text-transform: capitalize;
+   color: map-get($blackColors, 'black1');
+   margin: 0;
+   padding: 0;
+}
+
+.check {
+    accent-color: map-get($blackColors, 'black50');
+}
