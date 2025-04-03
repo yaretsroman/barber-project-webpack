@@ -16,6 +16,7 @@ import './components/barbers-banner/barbers-banner';
 import './components/our-price/our-price';
 import './components/consultation/consultation';
 import './components/form/form';
+import './components/imask/imask.js';
 import './components/contacts/contacts';
 import './components/footer/footer';
 import 'bootstrap/dist/css/bootstrap-grid.css';

@@ -1,10 +1,6 @@
 @import '../../scss/colors.scss';
 
 .form {
-    // &__input__wrapper {
-    //     position: relative;
-    // }
-
     &__label {
         position: absolute;
         padding-top: 25px;
@@ -13,12 +9,16 @@
             display: none;
         }
     }
-
     &__input {
         border: 2px solid map-get($blackColors, 'black1');
         background: transparent;
         outline: none;
         width: 323px;
         height: 68px;
+        text-indent: 20px;
+        text-transform: none;
+    }
+    &__input:focus {
+        border: 2px solid map-get($greenColors, 'green1');
     }
 }

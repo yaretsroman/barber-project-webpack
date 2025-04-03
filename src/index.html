@@ -492,18 +492,22 @@
             <h4 class="h4-cons text-center">
               Get in consultation with our expert barbers
             </h4>
-            <a href="#" class="a5 text-center mt-10">Expand Call-to-Action Details</a> 
+            <a class="a5 text-center mt-10">Expand Call-to-Action Details</a> 
           </div>
           <div class="consultation-forms mt-37">
             <form class="form">
-              <div class="form__input-wrapper">
-                <label for="search-input-id" class="form__label input-text">Enter your phone number</label>
-                <input id="search-input-id" class="form__input input-text" type="tel" />
-              </div>
+              <label for="tel-input-id" class="form__label input-text">+375 (___) ___-__-__</label>
+                <input id="tel-input-id"
+                class="form__input input-text"
+                type="tel" 
+                name="tel"/>
             </form>
             <form class="form">
               <label for="email-input-id" class="form__label input-text">E-mail</label>
-              <input id="email-input-id" class="form__input input-text" type="email" />
+              <input type="email"
+              name="email"
+              id="email-input-id"
+              class="form__input input-text"/>
             </form>
             <button class="btn--small2" type="submit">Book now</button>
           </div>
