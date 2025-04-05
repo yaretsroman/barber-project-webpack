@@ -1,6 +1,8 @@
 @import '../../scss/colors.scss';
+@import '../../scss/breakpoints.scss';
 
 .form {
+    position: relative;
     &__label {
         position: absolute;
         padding-top: 25px;
@@ -17,8 +19,12 @@
         height: 68px;
         text-indent: 20px;
         text-transform: none;
+        @media screen and (max-width: map-get($breakpoints, 'md')) {
+            width: 290px;
+        }
     }
     &__input:focus {
         border: 2px solid map-get($greenColors, 'green1');
     }
+    
 }
