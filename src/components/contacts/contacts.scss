@@ -1,17 +1,62 @@
 @import '../../scss/colors.scss';
+@import '../../scss/breakpoints.scss';
+
+.iframe {
+    position: absolute;
+    @media screen and (max-width: map-get($breakpoints, 'lg')) {
+        display: none;
+        background-color: map-get($brownColors, 'brown1' );
+    }
+}
 
 .contacts {
     height: 650px;
-    background: url('../../assets/images/map-image.svg');
-    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
+    // background: url('../../assets/images/map-image.svg');
+    @media screen and (max-width: map-get($breakpoints, 'lg')) {
+        background-color: map-get($brownColors, 'brown1' );
+    }
 }
 
 .contacts-banner {
+    max-width: 480px;
+    height: 530px;
+   position : relative;
    display: flex;
+   @media screen and (max-width: map-get($breakpoints, 'lg')) {
+    margin-left: auto;
+    margin-right: auto;
+   }
 }
 
 .banner-block {
+    padding: 66px 0px 0px 56px;
     width: 480px;
     height: 530px;
     background: map-get($brownColors, 'brown2');
+    @media screen and (max-width: map-get($breakpoints, 'lg')) {
+        padding: 35px 0px 0px 0px;
+        width: 440px;
+        height: 470px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.contacts-block {
+    max-width: 420px;
+    height: 375px;
+    padding: 23px 0px;
+    .link-block {
+        margin: 15px 0px;
+       display: flex;
+       gap: 30px;
+       @media screen and (max-width: 350px) {
+        gap: 15px;
+       }
+        .contact-link {
+           margin: 9px 0px 0px 0px;
+        }
+    }
 }
