@@ -47,7 +47,7 @@
 .left-block {
     display: flex;
     flex-direction: column;
-    gap: 670px;
+    gap: 671px;
     @media screen and (max-width: map-get($breakpoints, 'md')) {
         gap: 735px;
     }
@@ -60,9 +60,28 @@
     }
 }
 
-.banner-title {
+@keyframes openHeading {
+    from {
+        opacity: 0;
+        transform: translate3d(-15%, 0, 0);
+      }
+    
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+}
+
+.banner-title-1 {
+    animation: openHeading 1.5s;
     @media screen and (max-width: map-get($breakpoints, 'sm')) {
-        font-size: 55px;
+        font-size: 63px;
+    }
+}
+.banner-title-2 {
+    animation: openHeading 1.8s;
+    @media screen and (max-width: map-get($breakpoints, 'sm')) {
+        font-size: 63px;
     }
 }
 
