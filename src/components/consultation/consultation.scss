@@ -65,10 +65,3 @@
    margin: 0;
    padding: 0;
 }
-
-.check {
-    accent-color: map-get($blackColors, 'black50');
-    @media screen and (max-width: map-get($breakpoints, 'md')) {
-        width: 45px;
-    }
-}

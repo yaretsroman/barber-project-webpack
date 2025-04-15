@@ -3,9 +3,10 @@
 
 .form {
     position: relative;
+    display: flex;
+    align-items: center;
     &__label {
         position: absolute;
-        padding-top: 25px;
         padding-left: 20px;
         &--active {
             display: none;
@@ -24,7 +25,19 @@
         }
     }
     &__input:focus {
-        border: 2px solid map-get($greenColors, 'green1');
+        border: 2px solid map-get($whiteColors, 'white1');
     }
-    
+    // .clear-span {
+    //     position: absolute;
+    //     right:  15px;
+    //     cursor: pointer;
+    //     display: none;
+    // }
+}
+
+.check {
+    accent-color: map-get($blackColors, 'black50');
+    @media screen and (max-width: map-get($breakpoints, 'md')) {
+        width: 45px;
+    }
 }
