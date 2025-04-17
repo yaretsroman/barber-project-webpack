@@ -3,6 +3,7 @@
 
 .testimonials {
     min-height: 980px;
+    margin-bottom: -1px;
     background-color: map-get($brownColors, 'brown2');
     @media screen and (max-width: map-get($breakpoints, 'md')) {
         min-height: 865px;

@@ -10,6 +10,7 @@
 html {
     font-size: $mainFontSize;
     line-height: $mainFontLineHeight;
+    scroll-behavior: smooth;
 }
 
 body {

@@ -11,10 +11,14 @@
 
 .contacts {
     height: 650px;
+    margin-bottom: -1px;
     // background-repeat: no-repeat;
     // background: url('../../assets/images/map-image.svg');
     @media screen and (max-width: map-get($breakpoints, 'lg')) {
         background-color: map-get($brownColors, 'brown1' );
+    }
+    @media screen and (max-width: map-get($breakpoints, 'md')) {
+        height: 590px;
     }
 }
 

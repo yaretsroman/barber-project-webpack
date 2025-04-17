@@ -4,6 +4,7 @@
 .about-us {
     background-color: map-get($brownColors, 'brown2');
     min-height: 870px;
+    margin-bottom: -1px;
     @media screen and (max-width: map-get($breakpoints, 'xl')) {
         padding-top: 70px;
     }

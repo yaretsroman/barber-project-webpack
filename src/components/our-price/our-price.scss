@@ -13,6 +13,7 @@
 .our-price{
     padding-top: 114px;
     min-height: 1001px;
+    margin-bottom: -1px;
     background-color: map-get($brownColors, 'brown1');
     @media screen and (max-width: map-get($breakpoints, 'md')) {
         padding-top: 50px;

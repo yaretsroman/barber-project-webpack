@@ -2,6 +2,7 @@
 @import '../../scss/breakpoints.scss';
 
 .consultation {
+    margin-bottom: -1px;
     height: 495px;
     background: linear-gradient(to top, map-get($brownColors, 'brown2') 71%, map-get($brownColors, 'brown1') 29%);
     @media screen and (max-width: map-get($breakpoints, 'lg')) {
