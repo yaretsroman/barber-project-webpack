@@ -57,3 +57,17 @@
 .button-orange {
     width: 432px;
 }
+
+.to-top-btn {
+    z-index: 999999;
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    background: none;
+    border: none;
+    color: map-get($whiteColors, 'white1');
+    display: none;
+}
