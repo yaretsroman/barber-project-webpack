@@ -61,13 +61,13 @@
 .to-top-btn {
     z-index: 999999;
     position: fixed;
-    bottom: 28px;
-    right: 28px;
+    bottom: 18px;
+    right: 12px;
     cursor: pointer;
-    height: 50px;
-    width: 50px;
+    height: 43px;
+    width: 52px;
     background: none;
     border: none;
-    color: map-get($whiteColors, 'white1');
+    background-color: map-get($whiteColors, 'white1');
     display: none;
 }
