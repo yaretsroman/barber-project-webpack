@@ -76,7 +76,7 @@
 @keyframes openHeadingRight {
     from {
         opacity: 0;
-        transform: translate3d(15%, 0, 0);
+        transform: translate3d(5%, 0, 0);
       }
     
       to {
@@ -94,7 +94,7 @@
 .banner-title-2 {
     animation: openHeading 1.8s;
     @media screen and (max-width: map-get($breakpoints, 'md')) {
-        animation: openHeadingRight 1.8s;
+        animation: openHeadingRight 1.5s;
     }
     @media screen and (max-width: map-get($breakpoints, 'sm')) {
         font-size: 63px;

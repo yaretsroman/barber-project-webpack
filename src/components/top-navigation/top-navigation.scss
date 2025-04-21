@@ -5,14 +5,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &__mobile-btn {
-        background: transparent;
-        color: white;
-        border: none;
-        @media screen and (min-width: map-get($breakpoints, 'lg')) {
-            display: none;
-        }
-    }
     @media screen and (min-width: map-get($breakpoints, 'lg')) {
         padding-top: 17px;
         display: flex;

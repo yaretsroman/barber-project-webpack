@@ -1,7 +1,18 @@
 @import '../typography/button-text.scss';
 @import '../../scss/colors.scss';
+@import '../../scss/breakpoints.scss';
 
 .btn {
+    &__mobile-btn {
+        font-size: 15px;
+        background: transparent;
+        color: white;
+        border: none;
+        @media screen and (min-width: map-get($breakpoints, 'lg')) {
+            display: none;
+        }
+    }
+    
     &__large {
         cursor: pointer;
         border-color: map-get($whiteColors, 'white1');
@@ -59,15 +70,16 @@
 }
 
 .to-top-btn {
+    font-size: 40px;
     z-index: 999999;
     position: fixed;
     bottom: 18px;
     right: 12px;
     cursor: pointer;
-    height: 43px;
-    width: 52px;
     background: none;
     border: none;
-    background-color: map-get($whiteColors, 'white1');
     display: none;
+    @media screen and (max-width: map-get($breakpoints, 'md')) {
+        font-size: 30px;
+    }
 }

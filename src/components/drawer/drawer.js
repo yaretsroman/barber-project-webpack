@@ -1,20 +1,20 @@
 import './drawer.scss';
 
 const closeBtn = document.querySelector('.drawer__close');
-const drawer = document.querySelector('.drawer');
+const drawer = document.getElementById('drawer');
 
 closeBtn.addEventListener('click', () => {
   drawer.classList.remove('drawer--active');
 });
 
-const onClickOudside = (elementId, callback) => {
-  const element = document.getElementById(elementId);
+let touchStart, touchEnd;
 
-  document.addEventListener('click', (e) => {
-    if (!element.contains(e.target)) callback();
-  });
-};
+drawer.addEventListener('touchstart', (e) => (touchStart = e.targetTouches[0].clientX));
 
-onClickOudside('drawer-id', () => drawer.classList.remove('drawer--active'));
+drawer.addEventListener('touchmove', (e) => (touchEnd = e.targetTouches[0].clientX));
 
-document.addEventListener('DOMContentLoaded', onClickOudside);
+drawer.addEventListener('touchend', () => {
+  if (touchStart - touchEnd > 45) {
+    drawer.classList.remove('drawer--active');
+  }
+});

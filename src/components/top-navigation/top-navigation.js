@@ -1,6 +1,6 @@
 import './top-navigation.scss';
 
-const btn = document.querySelector('.nav-content__mobile-btn');
+const btn = document.querySelector('.btn__mobile-btn');
 const drawer = document.querySelector('.drawer');
 
 const toggleDrawer = () => {
