@@ -24,6 +24,7 @@
     }
 
     &--small {
+        z-index: 9999;
         cursor: pointer;
         @extend .button-text-small;
         border: none;

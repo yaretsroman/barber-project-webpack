@@ -88,7 +88,7 @@
 .banner-title-1 {
     animation: openHeading 1.5s;
     @media screen and (max-width: map-get($breakpoints, 'sm')) {
-        font-size: 63px;
+        font-size: 59px;
     }
 }
 .banner-title-2 {
