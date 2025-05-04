@@ -23,4 +23,6 @@ import 'bootstrap/dist/css/bootstrap-grid.css';
 import './components/popup/popup.js';
 import './components/drawer/drawer';
 
+import './services/firebase.service.js';
+
 console.log('Hello IT-academy student 🚀');
