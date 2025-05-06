@@ -501,22 +501,28 @@
           </div>
           <div class="consultation-forms mt-37">
             <form class="form">
-              <label for="tel-input-id" class="form__label input-text">+375 (___) ___-__-__</label>
+              <div>
+                <label for="tel-input-id" class="form__label input-text">+375 (___) ___-__-__</label>
                 <input id="tel-input-id"
                 class="form__input input-text"
                 type="tel" 
-                name="tel"/>
-                <!-- <span class="fa-solid fa-xmark fa-2xl clear-span"></span> -->
-            </form>
-            <form class="form">
-              <label for="email-input-id" class="form__label input-text">E-mail</label>
-              <input type="email"
-              name="email"
-              id="email-input-id"
-              class="form__input input-text"/>
+                name="tel"
+                required/>
               <!-- <span class="fa-solid fa-xmark fa-2xl clear-span"></span> -->
+              </div>
+
+              <div>
+                <label for="email-input-id" class="form__label input-text">E-mail</label>
+                <input type="email"
+                name="email"
+                id="email-input-id"
+                class="form__input input-text"
+                required/>
+              <!-- <span class="fa-solid fa-xmark fa-2xl clear-span"></span> -->
+              </div>
+
+              <button class="btn--small2" type="submit">Book now</button>
             </form>
-            <button class="btn--small2" type="submit">Book now</button>
           </div>
           <div class="personal-data pt-25">
             <input type="checkbox" class="check" checked>

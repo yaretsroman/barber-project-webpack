@@ -19,3 +19,18 @@ inputs.forEach((element) => {
   element.addEventListener('focus', onFocus);
   element.addEventListener('blur', onBlur);
 });
+
+// document.getElementById('contactForm').addEventListener('submit', submitForm);
+
+// function submitForm(e) {
+//   e.preventDefault();
+
+//   let email = getInputVal('email-input-id');
+//   let phone = getInputVal('tel-input-id');
+
+//   console.log(email);
+// }
+
+// function getInputVal(id) {
+//   return document.getElementById(id).value;
+// }
