@@ -20,16 +20,22 @@ inputs.forEach((element) => {
   element.addEventListener('blur', onBlur);
 });
 
-// document.getElementById('contactForm').addEventListener('submit', submitForm);
+document.getElementById('contactForm').addEventListener('submit', submitForm);
 
-// function submitForm(e) {
-//   e.preventDefault();
+function submitForm(e) {
+  e.preventDefault();
 
-//   let email = getInputVal('email-input-id');
-//   let phone = getInputVal('tel-input-id');
+  // let email = getInputVal('email-input-id');
+  // let phone = getInputVal('tel-input-id');
 
-//   console.log(email);
-// }
+  document.querySelector('.alert').style.display = 'block';
+
+  setTimeout(() => {
+    document.querySelector('.alert').style.display = 'none';
+  }, 3000);
+
+  document.getElementById('contactForm').reset();
+}
 
 // function getInputVal(id) {
 //   return document.getElementById(id).value;

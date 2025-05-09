@@ -500,35 +500,42 @@
             <a class="a5 text-center mt-10">Expand Call-to-Action Details</a> 
           </div>
           <div class="consultation-forms mt-37">
-            <form class="form">
-              <div>
+
+            <div class="alert"><h4 class="text-center">Your request has been accepted!</h4></div>
+
+            <form class="form" id="contactForm">
+             
+              <div class="consultation-inputs">
+                <div>
                 <label for="tel-input-id" class="form__label input-text">+375 (___) ___-__-__</label>
                 <input id="tel-input-id"
                 class="form__input input-text"
                 type="tel" 
                 name="tel"
                 required/>
-              <!-- <span class="fa-solid fa-xmark fa-2xl clear-span"></span> -->
-              </div>
-
-              <div>
+               <!-- <span class="fa-solid fa-xmark fa-2xl clear-span"></span> -->
+               </div>
+ 
+               <div>
                 <label for="email-input-id" class="form__label input-text">E-mail</label>
                 <input type="email"
                 name="email"
                 id="email-input-id"
                 class="form__input input-text"
                 required/>
-              <!-- <span class="fa-solid fa-xmark fa-2xl clear-span"></span> -->
+               <!-- <span class="fa-solid fa-xmark fa-2xl clear-span"></span> -->
               </div>
 
               <button class="btn--small2" type="submit">Book now</button>
+              </div>
+
+              <div class="personal-data pt-25">
+                <input type="checkbox" class="check" checked required>
+                <span class="span5 text-center">
+                 By clicking on the button, you agree to the <a href="" class="a-privacy">terms of processing personal data</a>
+                </span>
+              </div>
             </form>
-          </div>
-          <div class="personal-data pt-25">
-            <input type="checkbox" class="check" checked>
-            <span class="span5 text-center">
-             By clicking on the button, you agree to the <a href="" class="a-privacy">terms of processing personal data</a>
-            </span>
           </div>
         </div>
       </div>

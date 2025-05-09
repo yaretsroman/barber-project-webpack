@@ -10,7 +10,7 @@
         min-height: 600px;
     }
     @media screen and (max-width: map-get($breakpoints, 'md')) {
-        min-height: 670px;
+        min-height: 777px;
     }
 }
 
@@ -50,6 +50,7 @@
 
 .personal-data {
     display: flex;
+    place-self: center;
     @media screen and (max-width: map-get($breakpoints, 'lg')) {
        padding-top: 35px;
        width: 300px;
